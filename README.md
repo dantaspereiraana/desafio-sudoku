@@ -4,9 +4,9 @@ Este projeto é uma aplicação desktop de Sudoku desenvolvida em **Java**, util
 
 ---
 
-### 🖼️ Demonstração (GIF ou Imagem)
+### 🖼️ Interface
 
-*Adicione aqui uma imagem ou gif da tela principal do jogo após abrir a aplicação.*
+![minhafoto](sudoku.png)
 
 ---
 
