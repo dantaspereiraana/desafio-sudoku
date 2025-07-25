@@ -1,11 +1,6 @@
 package me.dio;
-
-import me.dio.ui.custom.frame.MainFrame;
-import me.dio.ui.custom.panel.MainPanel;
 import me.dio.ui.custom.screen.MainScreen;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
