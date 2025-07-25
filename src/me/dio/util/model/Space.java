@@ -6,7 +6,7 @@ public class Space {
     private final int expectedNumber;
 
 
-    public Space(boolean fixed, int expectedNumber) {
+    public Space(int expectedNumber, boolean fixed) {
         this.fixed = fixed;
         this.expectedNumber = expectedNumber;
         if (fixed){
