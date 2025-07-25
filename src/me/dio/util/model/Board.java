@@ -1,6 +1,5 @@
 package me.dio.util.model;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -30,7 +29,8 @@ public class Board {
         if(getStatus() == GameStatusEnum.NON_STARTED){
             return false;
         }
-        return spaces.stream().flatMap(Collection::stream).anyMatch(s -> nonNull(s.getActualNumber().equals(s.getExpectedNumber())));
+        return spaces.stream().flatMap(Collection::stream)
+                .anyMatch(s -> nonNull(s.getActualNumber()) && !s.getActualNumber().equals(s.getExpectedNumber()));
     }
 
     public boolean changeValue(final int col, final int row, final Integer value){
@@ -52,7 +52,7 @@ public class Board {
         return true;
     }
 
-    public void resert(){
+    public void reset(){
         spaces.forEach(c -> c.forEach(Space::clearSpace));
     }
 
