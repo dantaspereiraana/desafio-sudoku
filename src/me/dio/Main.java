@@ -1,9 +1,7 @@
-import me.dio.util.BoardTemplate;
-import me.dio.util.model.Board;
-import me.dio.util.model.Space;
+package me.dio;
 
-import java.util.ArrayList;
-import java.util.List;
+import me.dio.model.Board;
+
 import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
@@ -59,18 +57,6 @@ public class Main {
             return;
         }
 
-        List<List<Space>> spaces = new ArrayList<>();
-        for (int i = 0; i < BOARD_LIMIT; i++){
-            spaces.add(new ArrayList<>());
-            for (int j = 0; j < BOARD_LIMIT; j++){
-                var positionConfig = positions.get("%s,%s".formatted(i,j));
-                var expected = Integer.parseInt(positionConfig.split(",")[0]);
-                var fixed = Boolean.parseBoolean(positionConfig.split(",")[1]);
-                var currentSpace = new Space(expected, fixed);
-                spaces.get(i).add(currentSpace);
-            }
-        }
-        board = new Board(spaces);
         System.out.println("Jogo iniciado!");
     }
 

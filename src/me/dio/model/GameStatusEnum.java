@@ -1,4 +1,4 @@
-package me.dio.util.model;
+package me.dio.model;
 
 public enum GameStatusEnum {
     NON_STARTED("não iniciado "),

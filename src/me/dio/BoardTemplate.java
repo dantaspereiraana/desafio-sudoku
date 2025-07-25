@@ -1,4 +1,4 @@
-package me.dio.util;
+package me.dio;
 
 public final class BoardTemplate {
     private BoardTemplate(){}

@@ -1,4 +1,4 @@
-package me.dio.util.model;
+package me.dio.model;
 
 import java.util.Collection;
 import java.util.List;
